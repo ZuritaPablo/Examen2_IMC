@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { CalculadoraImc} from './calculadora-imc/calculadora-imc';
+import { Calculadora } from './calculadora/calculadora';
 
 export const routes: Routes = [
-    { path: 'calculadora', redirectTo: 'calculadora-imc', pathMatch: 'full' },
+    { path: '', component: Calculadora },
 ];

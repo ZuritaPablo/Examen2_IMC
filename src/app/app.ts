@@ -8,5 +8,4 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected title = 'Zurita_Pablo_Ex2_IMC';
 }

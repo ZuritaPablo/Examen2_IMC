@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CalculadoraImc } from './calculadora-imc';
+import { Calculadora } from './calculadora';
 
-describe('CalculadoraImc', () => {
-  let component: CalculadoraImc;
-  let fixture: ComponentFixture<CalculadoraImc>;
+describe('Calculadora', () => {
+  let component: Calculadora;
+  let fixture: ComponentFixture<Calculadora>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CalculadoraImc]
+      imports: [Calculadora]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CalculadoraImc);
+    fixture = TestBed.createComponent(Calculadora);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
