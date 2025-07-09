@@ -25,6 +25,14 @@ export class Calculadora {
     if (imc < 30) return "Sobrepeso";
     return "Obesidad";
   });
+  colorCategoria = computed(() => {
+    const imc = this.imc();
+    if (imc < 18.5) return 'green';     
+    if (imc < 25) return 'white';       
+    if (imc < 30) return 'yellow';      
+    return 'red';                       
+  });
+
 
   incrementarPeso() {
     this.peso.update(p => p + 1);
