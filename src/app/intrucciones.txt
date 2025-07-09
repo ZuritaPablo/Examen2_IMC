@@ -1,0 +1,8 @@
+docker build -t img-calculadora .
+
+docker run -dit -p 8082:80 --name c-calculadora --rm img-calculadora
+
+docker image tag img-calculadora zurupe/repo-calculadora:v1
+
+docker push zurupe/repo-calculadora:v1
+

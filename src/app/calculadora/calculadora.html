@@ -3,7 +3,7 @@
 
   <p><strong>Peso:</strong> {{ peso() }} kg</p>
   <p><strong>Altura:</strong> {{ altura() }} m</p>
-  <p><strong>IMC:</strong> {{ imc() | number:'1.2-2' }} kg/m²</p>
+  <p><strong>IMC:</strong> {{ imc() | number:'1.2-2' }}</p>
   <p><strong>Categoría:</strong> {{ categoria() }}</p>
 
   <div class="botones">
@@ -12,4 +12,5 @@
     <button (click)="resetearPeso()">Resetear Peso</button>
   </div>
 </div>
+
 
